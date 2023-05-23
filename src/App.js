@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     setInterval(() => { 
-      fetch("http://54.245.207.173:3000/")  
+      fetch("https://temp-humid-api.onrender.com/")  
       // fetch("https://temp-humid-api.onrender.com/")  
       .then((response) => response.json())
       .then((data) => {
@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     // setInterval(() => { 
-      fetch("http://54.245.207.173:3000/")  
+      fetch("https://temp-humid-api.onrender.com/")  
       // fetch("https://temp-humid-api.onrender.com/")  
       .then((response) => response.json())
       .then((data) => {
@@ -91,7 +91,7 @@ function App() {
 const download = (e) => {
   e.preventDefault();
   Axios({
-    url: "http://54.245.207.173:3000/export",
+    url: "https://temp-humid-api.onrender.com//export",
     method: "GET",
     responseType:"blob"
   }).then((res)=>{
