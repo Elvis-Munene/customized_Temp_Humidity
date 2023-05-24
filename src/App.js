@@ -91,7 +91,7 @@ function App() {
 const download = (e) => {
   e.preventDefault();
   Axios({
-    url: "https://temp-humid-api.onrender.com//export",
+    url: "https://temp-humid-api.onrender.com/export",
     method: "GET",
     responseType:"blob"
   }).then((res)=>{
